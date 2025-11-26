@@ -2,11 +2,13 @@ package com.example.Expense.Tracker.service;
 
 import com.example.Expense.Tracker.model.User;
 import com.example.Expense.Tracker.repository.UserRepository;
+import jakarta.websocket.OnClose;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService {
+public class UserService{
 
     @Autowired
     UserRepository userRepo;
